@@ -325,6 +325,7 @@ keypress(XKeyEvent *ev)
 
 	if (ev->state & ControlMask) {
 		switch(ksym) {
+		case XK_c: ksym = XK_Escape;    break;
 		case XK_j: ksym = XK_Down;      break;
 		case XK_k: ksym = XK_Up;        break;
 		default:
